@@ -32,10 +32,10 @@ and might possibly make it up by only needing to get the exact ID path once from
 - Not a big fan of all the <code>any</code> usage. If the objects were clear and set in stone
   I'd make types for them for sure.
 
-- This only supports only single extra fields because that's what the specifications gave. Ex: can't do updating like this: <br/>
-<code>{"posts": [{"_id": 2, "value": "too", "second_value": "cats"}];</code>
-<br/>
-But this could easily be updated to support it by modify <code>fromPathBuildAdjecentKey</code> and adding
-the rest of the <code>Object.entries(parent)</code> values instead of only the first.
+- This only supports only single extra fields because that's what the specifications gave. 
+  This could easily be updated to support it by modify <code>fromPathBuildAdjecentKey</code> 
+  and adding the rest of the <code>Object.entries(parent)</code> values instead of only the first.
+  Ex: can't do updating like this: <br/>
+  <code>{"posts": [{"_id": 2, "value": "too", "second_value": "cats"}];</code>
 
 - Jest tests are pretty simple, could for sure be more thorough.
