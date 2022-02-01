@@ -1,8 +1,9 @@
+import {Path} from "deepdash/es/Path";
+import {DocumentMissingTargetID} from "./exceptions/DocumentMissingTargetID";
+
 import lodash from 'lodash';
 import deepdash from 'deepdash';
 const _ = deepdash(lodash);
-import {Path} from "deepdash/es/Path";
-import {DocumentMissingTargetID} from "./exceptions/DocumentMissingTargetID";
 
 export abstract class DocumentOperation {
 

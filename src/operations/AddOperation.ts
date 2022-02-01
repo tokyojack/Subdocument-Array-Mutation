@@ -1,4 +1,5 @@
 import {DocumentOperation} from "./DocumentOperation";
+
 import lodash from 'lodash';
 import deepdash from 'deepdash';
 const _ = deepdash(lodash);

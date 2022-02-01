@@ -1,8 +1,9 @@
 import {DocumentOperation} from "./DocumentOperation";
-import lodash from 'lodash';
-import deepdash from 'deepdash';
 import {MutationMissingID} from "./exceptions/MutationMissingID";
 import {DocumentMissingTargetID} from "./exceptions/DocumentMissingTargetID";
+
+import lodash from 'lodash';
+import deepdash from 'deepdash';
 const _ = deepdash(lodash);
 
 export class RemoveOperation extends DocumentOperation {
