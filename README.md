@@ -11,12 +11,12 @@
 
 <h1>Commands</h1>
 
-| npm run {cmd} | Description |
-| ----------- | ----------- |
-| start       | Runs a index.ts once |
+| npm run {cmd} | Description                                                         |
+| ----------- |---------------------------------------------------------------------|
+| start       | Runs a <code>index.ts</code> once                                   |
 | watch       | Runs a nodemon instance of <code>index.ts</code> for simple testing |
-| test        | Runs all the jest tests in <code>/tests</code> |
-| lint        | Runs some simple linting |
+| test        | Runs all the jest tests in <code>/tests</code>                      |
+| lint        | Runs some simple linting                                            |
 
 <h1>Design notes</h1>
 
