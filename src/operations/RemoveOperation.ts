@@ -30,8 +30,8 @@ export class RemoveOperation extends DocumentOperation {
             throw new DocumentMissingTargetID(_id);
         }
 
-        const cleanedPath = documentPath.slice(0, documentPath.length - 1).join("."); // Slice to remove the extra _id at the end
-        return this.getStatement({[cleanedPath]: true});
+        const pathWithoutIDSuffix = documentPath.slice(0, documentPath.length - 1).join(".");
+        return this.getStatement({[pathWithoutIDSuffix]: true});
     }
 
 }
